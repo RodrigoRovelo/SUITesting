@@ -11,8 +11,9 @@ import Combine
 
 class RegistrationViewModel: ObservableObject, CombineFormValidating {
 
-    @CombineFormField(configuration: MMEmailFieldConfiguration(), label: "name@email", validator: DefaultValidator(errorStrategy: .highestPriority), debounceTime: 1) var email = ""
+    @CombineFormField(configuration: MMEmailFieldConfiguration(), label: "name@email", validator: DefaultValidator(errorStrategy: .highestPriority)) var email = ""
     @CombineFormField(configuration: MMPhoneNumberFieldConfiguration(), label: "phoneNumber") var phoneNumber = ""
+    @CombineFormField(configuration: MMMaskedConfiguration(), label: "Cedula") var dui = ""
     
     @Published var formValid: Bool = false
     @Published var formErrors: String = ""

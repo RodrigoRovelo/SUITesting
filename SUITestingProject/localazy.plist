@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>readKey</key>
+	<string>a8242570373463207803-b7a67cecd5ad2e99f873e6fcdc912236d72007eb96b6cdad5898873bfd3d2797</string>
+	<key>updateInterval</key>
+	<integer>3600</integer>
+	<key>statistics</key>
+	<dict>
+		<key>statsEnabled</key>
+		<true/>
+		<key>sendStatsRegularly</key>
+		<true/>
+		<key>statsInterval</key>
+		<integer>900</integer>
+	</dict>
+</dict>
+</plist>

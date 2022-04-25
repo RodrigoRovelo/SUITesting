@@ -7,29 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00B1F5C28171E2900949186 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = C00B1F5B28171E2900949186 /* Localazy */; };
+		C00B1F5E28173A3B00949186 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F5D28173A3B00949186 /* Localizable.strings */; };
 		C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */; };
 		C05B61C82810A34A00EBFDBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B61C72810A34A00EBFDBE /* ContentView.swift */; };
 		C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61C92810A34E00EBFDBE /* Assets.xcassets */; };
 		C05B61CD2810A34E00EBFDBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61CC2810A34E00EBFDBE /* Preview Assets.xcassets */; };
 		C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */ = {isa = PBXBuildFile; productRef = C05B61D42810A80C00EBFDBE /* CombineForms */; };
+		C09956A0281321C0000B4F99 /* AnyFormatKitSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C099569F281321C0000B4F99 /* AnyFormatKitSwiftUI */; };
+		C0A30A282813000700F7AC19 /* MMMaskedConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A30A272813000700F7AC19 /* MMMaskedConfiguration.swift */; };
+		C0A30A2A2813111300F7AC19 /* MMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A30A292813111300F7AC19 /* MMTextField.swift */; };
 		C0C417A02811F48C00929CC4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4179F2811F48C00929CC4 /* RegistrationViewModel.swift */; };
 		C0C417A22812038B00929CC4 /* MMEmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417A12812038B00929CC4 /* MMEmailRule.swift */; };
 		C0C417A72812072D00929CC4 /* MMEmailFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417A62812072D00929CC4 /* MMEmailFieldConfiguration.swift */; };
 		C0C417A92812100600929CC4 /* MMPhoneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417A82812100600929CC4 /* MMPhoneConfiguration.swift */; };
 		C0C417AB2812103600929CC4 /* MMPhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AA2812103600929CC4 /* MMPhoneNumberRule.swift */; };
+		C0C417AE28122E4500929CC4 /* MMPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AD28122E4500929CC4 /* MMPhoneTextField.swift */; };
+		C0C417B0281231CE00929CC4 /* MMCustomPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AF281231CE00929CC4 /* MMCustomPhoneTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C00B1F5D28173A3B00949186 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C05B61C22810A34A00EBFDBE /* SUITestingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUITestingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUITestingProjectApp.swift; sourceTree = "<group>"; };
 		C05B61C72810A34A00EBFDBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C05B61C92810A34E00EBFDBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B61CC2810A34E00EBFDBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C0A30A272813000700F7AC19 /* MMMaskedConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMMaskedConfiguration.swift; sourceTree = "<group>"; };
+		C0A30A292813111300F7AC19 /* MMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTextField.swift; sourceTree = "<group>"; };
 		C0C4179F2811F48C00929CC4 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		C0C417A12812038B00929CC4 /* MMEmailRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMEmailRule.swift; sourceTree = "<group>"; };
 		C0C417A62812072D00929CC4 /* MMEmailFieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMEmailFieldConfiguration.swift; sourceTree = "<group>"; };
 		C0C417A82812100600929CC4 /* MMPhoneConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPhoneConfiguration.swift; sourceTree = "<group>"; };
 		C0C417AA2812103600929CC4 /* MMPhoneNumberRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPhoneNumberRule.swift; sourceTree = "<group>"; };
+		C0C417AD28122E4500929CC4 /* MMPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPhoneTextField.swift; sourceTree = "<group>"; };
+		C0C417AF281231CE00929CC4 /* MMCustomPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCustomPhoneTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */,
+				C09956A0281321C0000B4F99 /* AnyFormatKitSwiftUI in Frameworks */,
+				C00B1F5C28171E2900949186 /* Localazy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +77,14 @@
 		C05B61C42810A34A00EBFDBE /* SUITestingProject */ = {
 			isa = PBXGroup;
 			children = (
+				C0C417AC28122E0D00929CC4 /* UIViewRepresentables */,
 				C0C417A3281206E700929CC4 /* Forms */,
 				C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */,
 				C05B61C72810A34A00EBFDBE /* ContentView.swift */,
 				C05B61C92810A34E00EBFDBE /* Assets.xcassets */,
 				C05B61CB2810A34E00EBFDBE /* Preview Content */,
 				C0C4179F2811F48C00929CC4 /* RegistrationViewModel.swift */,
+				C00B1F5D28173A3B00949186 /* Localizable.strings */,
 			);
 			path = SUITestingProject;
 			sourceTree = "<group>";
@@ -104,8 +120,19 @@
 			children = (
 				C0C417A62812072D00929CC4 /* MMEmailFieldConfiguration.swift */,
 				C0C417A82812100600929CC4 /* MMPhoneConfiguration.swift */,
+				C0A30A272813000700F7AC19 /* MMMaskedConfiguration.swift */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		C0C417AC28122E0D00929CC4 /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				C0C417AD28122E4500929CC4 /* MMPhoneTextField.swift */,
+				C0C417AF281231CE00929CC4 /* MMCustomPhoneTextField.swift */,
+				C0A30A292813111300F7AC19 /* MMTextField.swift */,
+			);
+			path = UIViewRepresentables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +153,8 @@
 			name = SUITestingProject;
 			packageProductDependencies = (
 				C05B61D42810A80C00EBFDBE /* CombineForms */,
+				C099569F281321C0000B4F99 /* AnyFormatKitSwiftUI */,
+				C00B1F5B28171E2900949186 /* Localazy */,
 			);
 			productName = SUITestingProject;
 			productReference = C05B61C22810A34A00EBFDBE /* SUITestingProject.app */;
@@ -157,6 +186,8 @@
 			mainGroup = C05B61B92810A34900EBFDBE;
 			packageReferences = (
 				C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */,
+				C099569E281321C0000B4F99 /* XCRemoteSwiftPackageReference "AnyFormatKitSwiftUI" */,
+				C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */,
 			);
 			productRefGroup = C05B61C32810A34A00EBFDBE /* Products */;
 			projectDirPath = "";
@@ -173,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05B61CD2810A34E00EBFDBE /* Preview Assets.xcassets in Resources */,
+				C00B1F5E28173A3B00949186 /* Localizable.strings in Resources */,
 				C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +222,11 @@
 				C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */,
 				C0C417A22812038B00929CC4 /* MMEmailRule.swift in Sources */,
 				C0C417A92812100600929CC4 /* MMPhoneConfiguration.swift in Sources */,
+				C0C417AE28122E4500929CC4 /* MMPhoneTextField.swift in Sources */,
+				C0A30A282813000700F7AC19 /* MMMaskedConfiguration.swift in Sources */,
 				C0C417AB2812103600929CC4 /* MMPhoneNumberRule.swift in Sources */,
+				C0A30A2A2813111300F7AC19 /* MMTextField.swift in Sources */,
+				C0C417B0281231CE00929CC4 /* MMCustomPhoneTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +429,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/localazy/localazy-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 		C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jossehblanco/CombineForms";
@@ -401,13 +445,31 @@
 				kind = branch;
 			};
 		};
+		C099569E281321C0000B4F99 /* XCRemoteSwiftPackageReference "AnyFormatKitSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/luximetr/AnyFormatKitSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C00B1F5B28171E2900949186 /* Localazy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */;
+			productName = Localazy;
+		};
 		C05B61D42810A80C00EBFDBE /* CombineForms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */;
 			productName = CombineForms;
+		};
+		C099569F281321C0000B4F99 /* AnyFormatKitSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C099569E281321C0000B4F99 /* XCRemoteSwiftPackageReference "AnyFormatKitSwiftUI" */;
+			productName = AnyFormatKitSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
