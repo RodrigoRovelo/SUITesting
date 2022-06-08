@@ -8,21 +8,37 @@
 import Foundation
 import CombineForms
 import Combine
+import Applanga
 
 class RegistrationViewModel: ObservableObject, CombineFormValidating {
 
     @CombineFormField(configuration: MMEmailFieldConfiguration(), label: "name@email", validator: DefaultValidator(errorStrategy: .highestPriority)) var email = ""
-    @CombineFormField(configuration: MMPhoneNumberFieldConfiguration(), label: "phoneNumber") var phoneNumber = ""
-    @CombineFormField(configuration: MMMaskedConfiguration(), label: "Cedula") var dui = ""
+    @CombineFormField(configuration: MMPhoneNumberFieldConfiguration(), label: "phoneNumber", debounceTime: 0.5) var phoneNumber = ""
+    @CombineFormField(configuration: MMMaskedConfiguration(mask: "# #### ####"), label: "0 0000 0000") var dui = ""
     
     @Published var formValid: Bool = false
     @Published var formErrors: String = ""
+    @Published var mask = "# #### ####"
     
     lazy var fields: [CombineFormField] = [$email, $phoneNumber]
-    internal var cancellables = Set<AnyCancellable>()
+    var cancellables = Set<AnyCancellable>()
+    var isDui = true
 
 
     init() {
         activateForm()
+    }
+    
+    func changeDocument(_ isDui: Bool) {
+        if isDui {
+            mask = "########-#"
+            $dui.configuration = MMMaskedConfiguration(mask: mask)
+            $dui.label = "00000000-0"
+        } else {
+            mask = "# #### ####"
+            $dui.configuration = MMMaskedConfiguration(mask: mask)
+            $dui.label = "0 0000 0000"
+        }
+        self.isDui.toggle()
     }
 }

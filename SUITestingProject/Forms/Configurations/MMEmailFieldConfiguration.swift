@@ -18,4 +18,6 @@ struct MMEmailFieldConfiguration: CombineFormFieldConfiguration {
     public var keyboardType: UIKeyboardType {
         .emailAddress
     }
+    
+    
 }

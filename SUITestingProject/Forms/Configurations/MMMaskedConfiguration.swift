@@ -10,6 +10,12 @@ import CombineForms
 
 struct MMMaskedConfiguration: CombineFormFieldConfiguration {
     let required: CombineFormFieldRule = MaskedRequiredRule()
+    var mask: String = ""
+    
+    init(mask: String) {
+        self.mask = mask
+    }
+    
     public var rules: [CombineFormFieldRule] {
         [self.required]
     }
@@ -18,10 +24,8 @@ struct MMMaskedConfiguration: CombineFormFieldConfiguration {
         .numberPad
     }
     
-    
     func formattedAddress(mac: String?) -> String? {
         guard let number = mac?.stripPhoneNumberFormatting else { return nil }
-        let mask = "########-#"
         var result = ""
         var index = number.startIndex
         for ch in mask where index < number.endIndex {

@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Applanga
 
 @main
 struct SUITestingProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

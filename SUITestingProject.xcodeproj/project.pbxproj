@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C00B1F5C28171E2900949186 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = C00B1F5B28171E2900949186 /* Localazy */; };
-		C00B1F5E28173A3B00949186 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F5D28173A3B00949186 /* Localizable.strings */; };
+		C00B1F65281790E800949186 /* Applanga in Frameworks */ = {isa = PBXBuildFile; productRef = C00B1F64281790E800949186 /* Applanga */; };
+		C00B1F672817916A00949186 /* applanga_settings.applanga in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F662817916A00949186 /* applanga_settings.applanga */; };
+		C00B1F68281793BE00949186 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F6A281793BE00949186 /* Localizable.strings */; };
 		C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */; };
 		C05B61C82810A34A00EBFDBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B61C72810A34A00EBFDBE /* ContentView.swift */; };
 		C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61C92810A34E00EBFDBE /* Assets.xcassets */; };
 		C05B61CD2810A34E00EBFDBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61CC2810A34E00EBFDBE /* Preview Assets.xcassets */; };
 		C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */ = {isa = PBXBuildFile; productRef = C05B61D42810A80C00EBFDBE /* CombineForms */; };
-		C09956A0281321C0000B4F99 /* AnyFormatKitSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C099569F281321C0000B4F99 /* AnyFormatKitSwiftUI */; };
 		C0A30A282813000700F7AC19 /* MMMaskedConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A30A272813000700F7AC19 /* MMMaskedConfiguration.swift */; };
 		C0A30A2A2813111300F7AC19 /* MMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A30A292813111300F7AC19 /* MMTextField.swift */; };
 		C0C417A02811F48C00929CC4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C4179F2811F48C00929CC4 /* RegistrationViewModel.swift */; };
@@ -22,12 +23,25 @@
 		C0C417A72812072D00929CC4 /* MMEmailFieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417A62812072D00929CC4 /* MMEmailFieldConfiguration.swift */; };
 		C0C417A92812100600929CC4 /* MMPhoneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417A82812100600929CC4 /* MMPhoneConfiguration.swift */; };
 		C0C417AB2812103600929CC4 /* MMPhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AA2812103600929CC4 /* MMPhoneNumberRule.swift */; };
-		C0C417AE28122E4500929CC4 /* MMPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AD28122E4500929CC4 /* MMPhoneTextField.swift */; };
+		C0C417AE28122E4500929CC4 /* MMMaskedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AD28122E4500929CC4 /* MMMaskedTextField.swift */; };
 		C0C417B0281231CE00929CC4 /* MMCustomPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C417AF281231CE00929CC4 /* MMCustomPhoneTextField.swift */; };
+		C0DDB2852818C83B00723827 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DDB2842818C83B00723827 /* TextFormatter.swift */; };
+		C0DDB2872818C9E500723827 /* TextInputFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DDB2862818C9E500723827 /* TextInputFormatter.swift */; };
+		C0DDB2892818CA4900723827 /* CaretPositionCorrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DDB2882818CA4900723827 /* CaretPositionCorrector.swift */; };
+		C0DDB28B2818CAF300723827 /* RangeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DDB28A2818CAF300723827 /* RangeCalculator.swift */; };
+		C0DDB28D2818CC6100723827 /* FormattedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DDB28C2818CC6100723827 /* FormattedText.swift */; };
+		C0FC19BD28500AE1004CF047 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC19BC28500AE1004CF047 /* MatchedView.swift */; };
+		C0FC19BF28500F91004CF047 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC19BE28500F91004CF047 /* CourseItem.swift */; };
+		C0FC19C12850105A004CF047 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC19C02850105A004CF047 /* DetailView.swift */; };
+		C0FC19C32850199A004CF047 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC19C22850199A004CF047 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C00B1F5D28173A3B00949186 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C00B1F662817916A00949186 /* applanga_settings.applanga */ = {isa = PBXFileReference; lastKnownFileType = file; path = applanga_settings.applanga; sourceTree = "<group>"; };
+		C00B1F69281793BE00949186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C00B1F6B2817940E00949186 /* es-SV */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-SV"; path = "es-SV.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C00B1F6C2817943F00949186 /* es-GT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-GT"; path = "es-GT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C00B1F6D2817945300949186 /* es-CR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CR"; path = "es-CR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C05B61C22810A34A00EBFDBE /* SUITestingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUITestingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUITestingProjectApp.swift; sourceTree = "<group>"; };
 		C05B61C72810A34A00EBFDBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,8 +54,17 @@
 		C0C417A62812072D00929CC4 /* MMEmailFieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMEmailFieldConfiguration.swift; sourceTree = "<group>"; };
 		C0C417A82812100600929CC4 /* MMPhoneConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPhoneConfiguration.swift; sourceTree = "<group>"; };
 		C0C417AA2812103600929CC4 /* MMPhoneNumberRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPhoneNumberRule.swift; sourceTree = "<group>"; };
-		C0C417AD28122E4500929CC4 /* MMPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMPhoneTextField.swift; sourceTree = "<group>"; };
+		C0C417AD28122E4500929CC4 /* MMMaskedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMMaskedTextField.swift; sourceTree = "<group>"; };
 		C0C417AF281231CE00929CC4 /* MMCustomPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMCustomPhoneTextField.swift; sourceTree = "<group>"; };
+		C0DDB2842818C83B00723827 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		C0DDB2862818C9E500723827 /* TextInputFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFormatter.swift; sourceTree = "<group>"; };
+		C0DDB2882818CA4900723827 /* CaretPositionCorrector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaretPositionCorrector.swift; sourceTree = "<group>"; };
+		C0DDB28A2818CAF300723827 /* RangeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeCalculator.swift; sourceTree = "<group>"; };
+		C0DDB28C2818CC6100723827 /* FormattedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedText.swift; sourceTree = "<group>"; };
+		C0FC19BC28500AE1004CF047 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		C0FC19BE28500F91004CF047 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		C0FC19C02850105A004CF047 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C0FC19C22850199A004CF047 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00B1F65281790E800949186 /* Applanga in Frameworks */,
 				C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */,
-				C09956A0281321C0000B4F99 /* AnyFormatKitSwiftUI in Frameworks */,
 				C00B1F5C28171E2900949186 /* Localazy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,14 +100,15 @@
 		C05B61C42810A34A00EBFDBE /* SUITestingProject */ = {
 			isa = PBXGroup;
 			children = (
+				C00B1F662817916A00949186 /* applanga_settings.applanga */,
 				C0C417AC28122E0D00929CC4 /* UIViewRepresentables */,
 				C0C417A3281206E700929CC4 /* Forms */,
 				C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */,
-				C05B61C72810A34A00EBFDBE /* ContentView.swift */,
+				C0FC19B928500A18004CF047 /* Views */,
 				C05B61C92810A34E00EBFDBE /* Assets.xcassets */,
 				C05B61CB2810A34E00EBFDBE /* Preview Content */,
 				C0C4179F2811F48C00929CC4 /* RegistrationViewModel.swift */,
-				C00B1F5D28173A3B00949186 /* Localizable.strings */,
+				C00B1F6A281793BE00949186 /* Localizable.strings */,
 			);
 			path = SUITestingProject;
 			sourceTree = "<group>";
@@ -128,11 +152,36 @@
 		C0C417AC28122E0D00929CC4 /* UIViewRepresentables */ = {
 			isa = PBXGroup;
 			children = (
-				C0C417AD28122E4500929CC4 /* MMPhoneTextField.swift */,
+				C0DDB2832818C82500723827 /* Formatters */,
+				C0C417AD28122E4500929CC4 /* MMMaskedTextField.swift */,
 				C0C417AF281231CE00929CC4 /* MMCustomPhoneTextField.swift */,
 				C0A30A292813111300F7AC19 /* MMTextField.swift */,
 			);
 			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		C0DDB2832818C82500723827 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				C0DDB2842818C83B00723827 /* TextFormatter.swift */,
+				C0DDB2862818C9E500723827 /* TextInputFormatter.swift */,
+				C0DDB2882818CA4900723827 /* CaretPositionCorrector.swift */,
+				C0DDB28A2818CAF300723827 /* RangeCalculator.swift */,
+				C0DDB28C2818CC6100723827 /* FormattedText.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		C0FC19B928500A18004CF047 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C05B61C72810A34A00EBFDBE /* ContentView.swift */,
+				C0FC19BC28500AE1004CF047 /* MatchedView.swift */,
+				C0FC19BE28500F91004CF047 /* CourseItem.swift */,
+				C0FC19C02850105A004CF047 /* DetailView.swift */,
+				C0FC19C22850199A004CF047 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +202,8 @@
 			name = SUITestingProject;
 			packageProductDependencies = (
 				C05B61D42810A80C00EBFDBE /* CombineForms */,
-				C099569F281321C0000B4F99 /* AnyFormatKitSwiftUI */,
 				C00B1F5B28171E2900949186 /* Localazy */,
+				C00B1F64281790E800949186 /* Applanga */,
 			);
 			productName = SUITestingProject;
 			productReference = C05B61C22810A34A00EBFDBE /* SUITestingProject.app */;
@@ -182,12 +231,15 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-SV",
+				"es-GT",
+				"es-CR",
 			);
 			mainGroup = C05B61B92810A34900EBFDBE;
 			packageReferences = (
 				C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */,
-				C099569E281321C0000B4F99 /* XCRemoteSwiftPackageReference "AnyFormatKitSwiftUI" */,
 				C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */,
+				C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */,
 			);
 			productRefGroup = C05B61C32810A34A00EBFDBE /* Products */;
 			projectDirPath = "";
@@ -203,8 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00B1F672817916A00949186 /* applanga_settings.applanga in Resources */,
 				C05B61CD2810A34E00EBFDBE /* Preview Assets.xcassets in Resources */,
-				C00B1F5E28173A3B00949186 /* Localizable.strings in Resources */,
+				C00B1F68281793BE00949186 /* Localizable.strings in Resources */,
 				C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,12 +272,21 @@
 				C05B61C82810A34A00EBFDBE /* ContentView.swift in Sources */,
 				C0C417A02811F48C00929CC4 /* RegistrationViewModel.swift in Sources */,
 				C0C417A72812072D00929CC4 /* MMEmailFieldConfiguration.swift in Sources */,
+				C0DDB28B2818CAF300723827 /* RangeCalculator.swift in Sources */,
+				C0DDB2852818C83B00723827 /* TextFormatter.swift in Sources */,
+				C0DDB2872818C9E500723827 /* TextInputFormatter.swift in Sources */,
 				C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */,
 				C0C417A22812038B00929CC4 /* MMEmailRule.swift in Sources */,
 				C0C417A92812100600929CC4 /* MMPhoneConfiguration.swift in Sources */,
-				C0C417AE28122E4500929CC4 /* MMPhoneTextField.swift in Sources */,
+				C0FC19BD28500AE1004CF047 /* MatchedView.swift in Sources */,
+				C0DDB28D2818CC6100723827 /* FormattedText.swift in Sources */,
+				C0C417AE28122E4500929CC4 /* MMMaskedTextField.swift in Sources */,
 				C0A30A282813000700F7AC19 /* MMMaskedConfiguration.swift in Sources */,
+				C0FC19C32850199A004CF047 /* HomeView.swift in Sources */,
+				C0FC19BF28500F91004CF047 /* CourseItem.swift in Sources */,
+				C0DDB2892818CA4900723827 /* CaretPositionCorrector.swift in Sources */,
 				C0C417AB2812103600929CC4 /* MMPhoneNumberRule.swift in Sources */,
+				C0FC19C12850105A004CF047 /* DetailView.swift in Sources */,
 				C0A30A2A2813111300F7AC19 /* MMTextField.swift in Sources */,
 				C0C417B0281231CE00929CC4 /* MMCustomPhoneTextField.swift in Sources */,
 			);
@@ -232,11 +294,26 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		C00B1F6A281793BE00949186 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C00B1F69281793BE00949186 /* en */,
+				C00B1F6B2817940E00949186 /* es-SV */,
+				C00B1F6C2817943F00949186 /* es-GT */,
+				C00B1F6D2817945300949186 /* es-CR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		C05B61CE2810A34E00EBFDBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -283,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -297,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -337,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -363,6 +441,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +471,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,20 +517,20 @@
 				minimumVersion = 0.0.3;
 			};
 		};
+		C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/applanga/sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jossehblanco/CombineForms";
 			requirement = {
 				branch = main;
 				kind = branch;
-			};
-		};
-		C099569E281321C0000B4F99 /* XCRemoteSwiftPackageReference "AnyFormatKitSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/luximetr/AnyFormatKitSwiftUI.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -461,15 +541,15 @@
 			package = C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */;
 			productName = Localazy;
 		};
+		C00B1F64281790E800949186 /* Applanga */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */;
+			productName = Applanga;
+		};
 		C05B61D42810A80C00EBFDBE /* CombineForms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */;
 			productName = CombineForms;
-		};
-		C099569F281321C0000B4F99 /* AnyFormatKitSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C099569E281321C0000B4F99 /* XCRemoteSwiftPackageReference "AnyFormatKitSwiftUI" */;
-			productName = AnyFormatKitSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
