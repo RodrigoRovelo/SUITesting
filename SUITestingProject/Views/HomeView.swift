@@ -24,7 +24,7 @@ struct HomeView: View {
                 
                 
                 bottomCarrousel
-                    //.offset(CGSize(width: 0, height: dragOffset.height * -1))
+                    .offset(CGSize(width: 0, height: dragOffset.height * -1))
             }
             
             if show {
