@@ -21,6 +21,7 @@
 		C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61C92810A34E00EBFDBE /* Assets.xcassets */; };
 		C05B61CD2810A34E00EBFDBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61CC2810A34E00EBFDBE /* Preview Assets.xcassets */; };
 		C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */ = {isa = PBXBuildFile; productRef = C05B61D42810A80C00EBFDBE /* CombineForms */; };
+		C09B90962853A047008CE295 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09B90952853A047008CE295 /* CreditCardView.swift */; };
 		C0A30A282813000700F7AC19 /* MMMaskedConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A30A272813000700F7AC19 /* MMMaskedConfiguration.swift */; };
 		C0A30A2A2813111300F7AC19 /* MMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A30A292813111300F7AC19 /* MMTextField.swift */; };
 		C0BC36FC28510C190003D558 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC36FB28510C190003D558 /* SkeletonView.swift */; };
@@ -59,6 +60,7 @@
 		C05B61C72810A34A00EBFDBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C05B61C92810A34E00EBFDBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C05B61CC2810A34E00EBFDBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C09B90952853A047008CE295 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 		C0A30A272813000700F7AC19 /* MMMaskedConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMMaskedConfiguration.swift; sourceTree = "<group>"; };
 		C0A30A292813111300F7AC19 /* MMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTextField.swift; sourceTree = "<group>"; };
 		C0BC36FB28510C190003D558 /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				C0BC36FB28510C190003D558 /* SkeletonView.swift */,
 				C00B20DC2852ACDE006E3DC6 /* OptionsView.swift */,
 				C0EEE05A2852C9BB007B0FAF /* CardDetailsView.swift */,
+				C09B90952853A047008CE295 /* CreditCardView.swift */,
 			);
 			path = Skeletons;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				C0DDB2872818C9E500723827 /* TextInputFormatter.swift in Sources */,
 				C00709062852B71A0040D083 /* SkeletonViewModel.swift in Sources */,
 				C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */,
+				C09B90962853A047008CE295 /* CreditCardView.swift in Sources */,
 				C0C417A22812038B00929CC4 /* MMEmailRule.swift in Sources */,
 				C0BC36FC28510C190003D558 /* SkeletonView.swift in Sources */,
 				C0C417A92812100600929CC4 /* MMPhoneConfiguration.swift in Sources */,

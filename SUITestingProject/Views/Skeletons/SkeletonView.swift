@@ -12,28 +12,15 @@ struct SkeletonView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(skeletonViewModel.optionsDetails, id: \.self) { newDetail in
-                        OptionsView(optionsDetail: newDetail)
-                    }
-                }
-            }
+            OptionsView(optionsDetails: skeletonViewModel.optionsDetails)
             
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(skeletonViewModel.cardDetails, id: \.self) { newDetail in
-                        CardDetailsView(cardDetail: newDetail)
-                    }
-                }
-            }
+            CardDetailsView(cards: skeletonViewModel.cardDetails)
             
             Spacer()
         }
         .padding([.leading])
         .onLoad(perform: skeletonViewModel.fetch)
         .redacted(reason: skeletonViewModel.isLoading ? .placeholder : [])
-        
     }
 }
 

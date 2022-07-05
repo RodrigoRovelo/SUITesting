@@ -13,7 +13,7 @@ struct SUITestingProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SkeletonView()
+            HomeView()
         }
     }
 }

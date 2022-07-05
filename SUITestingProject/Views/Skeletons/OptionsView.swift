@@ -8,25 +8,88 @@
 import SwiftUI
 
 struct OptionsView: View {
+    let optionsDetails: [OptionsDetail]
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(optionsDetails, id: \.self) { newDetail in
+                    OptionsCardView(optionsDetail: newDetail)
+                        .aspectRatio(1.5, contentMode: .fit)
+                }
+            }
+        }
+    }
+}
+
+struct OptionsCardView: View {
     let optionsDetail: OptionsDetail
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 16) {
-                Text(optionsDetail.title)
-                Button {
-
-                } label: {
-                    Text(optionsDetail.buttonTitle)
+        ZStack {
+            LinearGradient(gradient: .init(colors: [Color(cgColor: UIColor.borderColor.cgColor), Color(cgColor: UIColor.borderColor.cgColor).opacity(0)]), startPoint: .topTrailing, endPoint: .bottomLeading)
+            
+            Color(.black)
+                .cornerRadius(20)
+                .padding(1)
+            Color(cgColor: UIColor.darkBlue.cgColor)
+                .cornerRadius(20)
+                .padding(1)
+            
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(.orange)
+                        .frame(width: 75, height: 75)
                 }
             }
-
-            Image(systemName: "star.fill")
-                .resizable()
-                .frame(width: 75, height: 75, alignment: .bottom)
+            .blur(radius: 20)
+            
+            VStack {
+                HStack {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(optionsDetail.title)
+                            .foregroundColor(.white)
+                            .font(.headline.bold())
+                            //.frame(maxWidth: .infinity)
+                            //.multilineTextAlignment(.leading)
+                        
+                        Text(optionsDetail.buttonTitle)
+                            .font(.caption)
+                            .foregroundColor(.orange)
+                    }
+                    Spacer()
+                }
+                Spacer()
+            }
+            .padding()
+            
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(.orange)
+                        .frame(width: 75, height: 75)
+                }
+            }
+            
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .foregroundColor(.orange)
+                        .frame(width: 75, height: 75)
+                }
+            }
         }
-        .padding()
-        .background(Color(cgColor: UIColor.darkBlue.cgColor))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .cornerRadius(20)
     }
 }
@@ -43,6 +106,6 @@ extension OptionsDetail {
 
 struct OptionsView_Previews: PreviewProvider {
     static var previews: some View {
-        OptionsView(optionsDetail: .default)
+        OptionsCardView(optionsDetail: .default)
     }
 }
