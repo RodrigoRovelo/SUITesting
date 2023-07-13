@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct CardDetailsView: View {
-    let cards: [CardDetail]
+    let cards: [CardType]
     
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(cards, id: \.self) { cardDetail in
-                    CreditCardView(cardDetail: cardDetail)
+        GeometryReader { reader in
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(cards, id: \.self) { cardDetail in
+                        CreditCardView(card: cardDetail)
+                            .frame(minWidth: reader.size.width)
+                    }
                 }
             }
+            .frame(minWidth: 250)
         }
-        .frame(height: 250)
     }
 }
 
 struct CardDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        CardDetailsView(cards: [.default])
+        CardDetailsView(cards: [CardType.titleHightlight(card: .titleHighlight)])
     }
 }

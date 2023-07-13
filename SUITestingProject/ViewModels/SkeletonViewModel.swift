@@ -9,11 +9,11 @@ import Foundation
 
 class SkeletonViewModel: ObservableObject {
     @Published private(set) var optionsDetails: [OptionsDetail]
-    @Published private(set) var cardDetails: [CardDetail]
+    @Published private(set) var cardDetails: [CardType]
     @Published private(set) var isLoading = true
     
     init(optionsDetails: [OptionsDetail] = Array(repeating: .default, count: 2),
-         cardDetails: [CardDetail] = Array(repeating: .default, count: 3)) {
+         cardDetails: [CardType] = Array(repeating: CardType.offer(card: .default), count: 3)) {
         self.optionsDetails = optionsDetails
         self.cardDetails = cardDetails
     }

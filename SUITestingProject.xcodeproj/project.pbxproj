@@ -11,11 +11,13 @@
 		C007090A2852B9250040D083 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00709092852B9250040D083 /* View+Extensions.swift */; };
 		C007090D2852B9650040D083 /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C007090C2852B9650040D083 /* ViewDidLoadModifier.swift */; };
 		C007090F2852C7070040D083 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C007090E2852C7070040D083 /* UIColor+Extensions.swift */; };
-		C00B1F5C28171E2900949186 /* Localazy in Frameworks */ = {isa = PBXBuildFile; productRef = C00B1F5B28171E2900949186 /* Localazy */; };
 		C00B1F65281790E800949186 /* Applanga in Frameworks */ = {isa = PBXBuildFile; productRef = C00B1F64281790E800949186 /* Applanga */; };
 		C00B1F672817916A00949186 /* applanga_settings.applanga in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F662817916A00949186 /* applanga_settings.applanga */; };
 		C00B1F68281793BE00949186 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F6A281793BE00949186 /* Localizable.strings */; };
 		C00B20DD2852ACDE006E3DC6 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B20DC2852ACDE006E3DC6 /* OptionsView.swift */; };
+		C034AFE0294A3865007DC796 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034AFDF294A3865007DC796 /* SplashScreen.swift */; };
+		C034AFE2294A46A7007DC796 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034AFE1294A46A7007DC796 /* MainCoordinator.swift */; };
+		C034AFE4294A4712007DC796 /* UserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034AFE3294A4712007DC796 /* UserCoordinator.swift */; };
 		C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */; };
 		C05B61C82810A34A00EBFDBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B61C72810A34A00EBFDBE /* ContentView.swift */; };
 		C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05B61C92810A34E00EBFDBE /* Assets.xcassets */; };
@@ -55,6 +57,9 @@
 		C00B1F6C2817943F00949186 /* es-GT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-GT"; path = "es-GT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C00B1F6D2817945300949186 /* es-CR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-CR"; path = "es-CR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C00B20DC2852ACDE006E3DC6 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		C034AFDF294A3865007DC796 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		C034AFE1294A46A7007DC796 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C034AFE3294A4712007DC796 /* UserCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoordinator.swift; sourceTree = "<group>"; };
 		C05B61C22810A34A00EBFDBE /* SUITestingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUITestingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUITestingProjectApp.swift; sourceTree = "<group>"; };
 		C05B61C72810A34A00EBFDBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,7 +95,6 @@
 			files = (
 				C00B1F65281790E800949186 /* Applanga in Frameworks */,
 				C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */,
-				C00B1F5C28171E2900949186 /* Localazy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,12 +242,15 @@
 		C0FC19B928500A18004CF047 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C034AFDF294A3865007DC796 /* SplashScreen.swift */,
 				C00B20DB2852AC8F006E3DC6 /* Skeletons */,
 				C05B61C72810A34A00EBFDBE /* ContentView.swift */,
 				C0FC19BC28500AE1004CF047 /* MatchedView.swift */,
 				C0FC19BE28500F91004CF047 /* CourseItem.swift */,
 				C0FC19C02850105A004CF047 /* DetailView.swift */,
 				C0FC19C22850199A004CF047 /* HomeView.swift */,
+				C034AFE1294A46A7007DC796 /* MainCoordinator.swift */,
+				C034AFE3294A4712007DC796 /* UserCoordinator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,7 +273,6 @@
 			name = SUITestingProject;
 			packageProductDependencies = (
 				C05B61D42810A80C00EBFDBE /* CombineForms */,
-				C00B1F5B28171E2900949186 /* Localazy */,
 				C00B1F64281790E800949186 /* Applanga */,
 			);
 			productName = SUITestingProject;
@@ -302,7 +308,6 @@
 			mainGroup = C05B61B92810A34900EBFDBE;
 			packageReferences = (
 				C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */,
-				C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */,
 				C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */,
 			);
 			productRefGroup = C05B61C32810A34A00EBFDBE /* Products */;
@@ -342,9 +347,11 @@
 				C007090D2852B9650040D083 /* ViewDidLoadModifier.swift in Sources */,
 				C0EEE05B2852C9BB007B0FAF /* CardDetailsView.swift in Sources */,
 				C0DDB2872818C9E500723827 /* TextInputFormatter.swift in Sources */,
+				C034AFE0294A3865007DC796 /* SplashScreen.swift in Sources */,
 				C00709062852B71A0040D083 /* SkeletonViewModel.swift in Sources */,
 				C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */,
 				C09B90962853A047008CE295 /* CreditCardView.swift in Sources */,
+				C034AFE2294A46A7007DC796 /* MainCoordinator.swift in Sources */,
 				C0C417A22812038B00929CC4 /* MMEmailRule.swift in Sources */,
 				C0BC36FC28510C190003D558 /* SkeletonView.swift in Sources */,
 				C0C417A92812100600929CC4 /* MMPhoneConfiguration.swift in Sources */,
@@ -352,6 +359,7 @@
 				C0DDB28D2818CC6100723827 /* FormattedText.swift in Sources */,
 				C0C417AE28122E4500929CC4 /* MMMaskedTextField.swift in Sources */,
 				C0A30A282813000700F7AC19 /* MMMaskedConfiguration.swift in Sources */,
+				C034AFE4294A4712007DC796 /* UserCoordinator.swift in Sources */,
 				C0FC19C32850199A004CF047 /* HomeView.swift in Sources */,
 				C0FC19BF28500F91004CF047 /* CourseItem.swift in Sources */,
 				C0DDB2892818CA4900723827 /* CaretPositionCorrector.swift in Sources */,
@@ -581,14 +589,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/localazy/localazy-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.3;
-			};
-		};
 		C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/applanga/sdk-ios";
@@ -608,11 +608,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C00B1F5B28171E2900949186 /* Localazy */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C00B1F5A28171E2900949186 /* XCRemoteSwiftPackageReference "localazy-swift" */;
-			productName = Localazy;
-		};
 		C00B1F64281790E800949186 /* Applanga */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */;

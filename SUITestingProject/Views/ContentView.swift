@@ -15,68 +15,69 @@ struct ContentView: View {
     @State private var name = "Taylor"
     
     var body: some View {
-
-        TextField("Enter your name", text: $name)
-            .textFieldStyle(.roundedBorder)
-            .keyboardType(.numberPad)
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    Button("Click me!") {
-                        print("Clicked")
+        VStack {
+            TextField("Enter your name", text: $name)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.numberPad)
+                .toolbar {
+                    ToolbarItemGroup(placement: .keyboard) {
+                        Button("Click me!") {
+                            print("Clicked")
+                        }
                     }
                 }
-            }
-        
-        TextFieldWithErrors(field: vm.$email)
-            .onAppear(perform: {
-                
-            })
-        TextFieldWithErrors(field: vm.$phoneNumber, onEditingChanged: { (isEditing) in
-            if (!isEditing) {
-                vm.$phoneNumber.validate()
-            }
-        })
-        //TextFieldWithErrors(field: vm.$dui)
-        //TextFieldWithErrors(field: vm.$dui, mask: "########-#")
-        TextFieldWithErrors(field: vm.$dui, mask: $vm.mask.wrappedValue)
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    Spacer()
-                    
-                    Button("Next") {
-                        print("Next Clicked")
-                    }
-                }
-            }
-        
-//        TextField("text", text: $vm.dui)
-//            .onReceive(vm.$dui.publisher) { (c) in
-//                        print("Got \(c)")
-//                self.vm.dui = self.vm.dui.uppercased()
-//            }
-        //MSTextField(title: "Title", placeholder: "Titulo", text: $vm.dui, mask: DuiMask())
-//        TextField("Test", text: $vm.prueba)
-//            .onReceive(vm.$prueba.removeDuplicates(), perform: { value in
-//                self.text = String.format("#######-#", with: value, replacingCharacter: "#")
-//                print(text)
-//            })
-        Text(Applanga.localizedString(forKey: "Hello", withDefaultValue: "Hallo"))
-        Text(Applanga.localizedString(forKey: "Si Señor", withDefaultValue: "no hay"))
-        Text(Applanga.localizedString(forKey: "Prueba", withDefaultValue: "Hallo"))
-
-        Button(action: {
-            print("Yes daddy")
-        }, label: {
-            Text("Continue!")
-        })
-        .disabled(!vm.formValid)
-        
-        Button(action: {
             
-            vm.changeDocument(vm.isDui)
-        }, label: {
-            Text("Test custom error")
-        })
+            TextFieldWithErrors(field: vm.$email)
+                .onAppear(perform: {
+                    
+                })
+            TextFieldWithErrors(field: vm.$phoneNumber, onEditingChanged: { (isEditing) in
+                if (!isEditing) {
+                    vm.$phoneNumber.validate()
+                }
+            })
+            //TextFieldWithErrors(field: vm.$dui)
+            //TextFieldWithErrors(field: vm.$dui, mask: "########-#")
+            TextFieldWithErrors(field: vm.$dui, mask: $vm.mask.wrappedValue)
+                .toolbar {
+                    ToolbarItemGroup(placement: .keyboard) {
+                        Spacer()
+                        
+                        Button("Next") {
+                            print("Next Clicked")
+                        }
+                    }
+                }
+            
+    //        TextField("text", text: $vm.dui)
+    //            .onReceive(vm.$dui.publisher) { (c) in
+    //                        print("Got \(c)")
+    //                self.vm.dui = self.vm.dui.uppercased()
+    //            }
+            //MSTextField(title: "Title", placeholder: "Titulo", text: $vm.dui, mask: DuiMask())
+    //        TextField("Test", text: $vm.prueba)
+    //            .onReceive(vm.$prueba.removeDuplicates(), perform: { value in
+    //                self.text = String.format("#######-#", with: value, replacingCharacter: "#")
+    //                print(text)
+    //            })
+            Text(Applanga.localizedString(forKey: "Hello", withDefaultValue: "Hallo"))
+            Text(Applanga.localizedString(forKey: "Si Señor", withDefaultValue: "no hay"))
+            Text(Applanga.localizedString(forKey: "Prueba", withDefaultValue: "Hallo"))
+
+            Button(action: {
+                print("Yes daddy")
+            }, label: {
+                Text("Continue!")
+            })
+            .disabled(!vm.formValid)
+            
+            Button(action: {
+                
+                vm.changeDocument(vm.isDui)
+            }, label: {
+                Text("Test custom error")
+            })
+        }
     }
 }
 
