@@ -8,7 +8,6 @@
 import Foundation
 import CombineForms
 import Combine
-import Applanga
 
 class RegistrationViewModel: ObservableObject, CombineFormValidating {
 

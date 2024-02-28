@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
-import Applanga
 
 @main
 struct SUITestingProjectApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {

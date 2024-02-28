@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A025E612B325D9A009D720B /* AirshipAutomation in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E602B325D9A009D720B /* AirshipAutomation */; };
+		0A025E632B325D9A009D720B /* AirshipCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E622B325D9A009D720B /* AirshipCore */; };
+		0A025E652B325D9A009D720B /* AirshipDebug in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E642B325D9A009D720B /* AirshipDebug */; };
+		0A025E672B325D9A009D720B /* AirshipFeatureFlags in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E662B325D9A009D720B /* AirshipFeatureFlags */; };
+		0A025E692B325D9A009D720B /* AirshipMessageCenter in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E682B325D9A009D720B /* AirshipMessageCenter */; };
+		0A025E6D2B334AE0009D720B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A025E6C2B334AE0009D720B /* AppDelegate.swift */; };
+		0A025E7F2B3F4BFA009D720B /* TealiumCollect in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E7E2B3F4BFA009D720B /* TealiumCollect */; };
+		0A025E812B3F4BFA009D720B /* TealiumCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E802B3F4BFA009D720B /* TealiumCore */; };
+		0A025E832B3F4BFA009D720B /* TealiumTagManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0A025E822B3F4BFA009D720B /* TealiumTagManagement */; };
+		0AD2F97D2A60C24C00838791 /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2F97C2A60C24C00838791 /* HiddenModifier.swift */; };
+		0AD2F97F2A60C32A00838791 /* ErrorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2F97E2A60C32A00838791 /* ErrorModifier.swift */; };
+		0AD2F9812A60C4BC00838791 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2F9802A60C4BC00838791 /* String+Extensions.swift */; };
 		C00709062852B71A0040D083 /* SkeletonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00709052852B71A0040D083 /* SkeletonViewModel.swift */; };
 		C007090A2852B9250040D083 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00709092852B9250040D083 /* View+Extensions.swift */; };
 		C007090D2852B9650040D083 /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C007090C2852B9650040D083 /* ViewDidLoadModifier.swift */; };
 		C007090F2852C7070040D083 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C007090E2852C7070040D083 /* UIColor+Extensions.swift */; };
-		C00B1F65281790E800949186 /* Applanga in Frameworks */ = {isa = PBXBuildFile; productRef = C00B1F64281790E800949186 /* Applanga */; };
-		C00B1F672817916A00949186 /* applanga_settings.applanga in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F662817916A00949186 /* applanga_settings.applanga */; };
 		C00B1F68281793BE00949186 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00B1F6A281793BE00949186 /* Localizable.strings */; };
 		C00B20DD2852ACDE006E3DC6 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B20DC2852ACDE006E3DC6 /* OptionsView.swift */; };
 		C034AFE0294A3865007DC796 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034AFDF294A3865007DC796 /* SplashScreen.swift */; };
@@ -47,11 +57,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A025E6A2B325E67009D720B /* SUITestingProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SUITestingProject.entitlements; sourceTree = "<group>"; };
+		0A025E6B2B325F17009D720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0A025E6C2B334AE0009D720B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AD2F97C2A60C24C00838791 /* HiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
+		0AD2F97E2A60C32A00838791 /* ErrorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModifier.swift; sourceTree = "<group>"; };
+		0AD2F9802A60C4BC00838791 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		C00709052852B71A0040D083 /* SkeletonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewModel.swift; sourceTree = "<group>"; };
 		C00709092852B9250040D083 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C007090C2852B9650040D083 /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
 		C007090E2852C7070040D083 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		C00B1F662817916A00949186 /* applanga_settings.applanga */ = {isa = PBXFileReference; lastKnownFileType = file; path = applanga_settings.applanga; sourceTree = "<group>"; };
 		C00B1F69281793BE00949186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C00B1F6B2817940E00949186 /* es-SV */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-SV"; path = "es-SV.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C00B1F6C2817943F00949186 /* es-GT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-GT"; path = "es-GT.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -93,14 +108,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00B1F65281790E800949186 /* Applanga in Frameworks */,
+				0A025E692B325D9A009D720B /* AirshipMessageCenter in Frameworks */,
+				0A025E632B325D9A009D720B /* AirshipCore in Frameworks */,
+				0A025E672B325D9A009D720B /* AirshipFeatureFlags in Frameworks */,
+				0A025E7F2B3F4BFA009D720B /* TealiumCollect in Frameworks */,
+				0A025E612B325D9A009D720B /* AirshipAutomation in Frameworks */,
+				0A025E812B3F4BFA009D720B /* TealiumCore in Frameworks */,
 				C05B61D52810A80C00EBFDBE /* CombineForms in Frameworks */,
+				0A025E832B3F4BFA009D720B /* TealiumTagManagement in Frameworks */,
+				0A025E652B325D9A009D720B /* AirshipDebug in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AD2F9782A60BF9700838791 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0AD2F97B2A60C23D00838791 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0AD2F97C2A60C24C00838791 /* HiddenModifier.swift */,
+				0AD2F97E2A60C32A00838791 /* ErrorModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		C00709072852B90C0040D083 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +153,7 @@
 			children = (
 				C00709092852B9250040D083 /* View+Extensions.swift */,
 				C007090E2852C7070040D083 /* UIColor+Extensions.swift */,
+				0AD2F9802A60C4BC00838791 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -157,8 +196,9 @@
 		C05B61C42810A34A00EBFDBE /* SUITestingProject */ = {
 			isa = PBXGroup;
 			children = (
+				0A025E6B2B325F17009D720B /* Info.plist */,
+				0A025E6A2B325E67009D720B /* SUITestingProject.entitlements */,
 				C00709072852B90C0040D083 /* Source */,
-				C00B1F662817916A00949186 /* applanga_settings.applanga */,
 				C0C417AC28122E0D00929CC4 /* UIViewRepresentables */,
 				C0C417A3281206E700929CC4 /* Forms */,
 				C05B61C52810A34A00EBFDBE /* SUITestingProjectApp.swift */,
@@ -168,6 +208,7 @@
 				C05B61CB2810A34E00EBFDBE /* Preview Content */,
 				C0C4179F2811F48C00929CC4 /* RegistrationViewModel.swift */,
 				C00B1F6A281793BE00949186 /* Localizable.strings */,
+				0A025E6C2B334AE0009D720B /* AppDelegate.swift */,
 			);
 			path = SUITestingProject;
 			sourceTree = "<group>";
@@ -242,6 +283,8 @@
 		C0FC19B928500A18004CF047 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AD2F97B2A60C23D00838791 /* Modifiers */,
+				0AD2F9782A60BF9700838791 /* CustomViews */,
 				C034AFDF294A3865007DC796 /* SplashScreen.swift */,
 				C00B20DB2852AC8F006E3DC6 /* Skeletons */,
 				C05B61C72810A34A00EBFDBE /* ContentView.swift */,
@@ -273,7 +316,14 @@
 			name = SUITestingProject;
 			packageProductDependencies = (
 				C05B61D42810A80C00EBFDBE /* CombineForms */,
-				C00B1F64281790E800949186 /* Applanga */,
+				0A025E602B325D9A009D720B /* AirshipAutomation */,
+				0A025E622B325D9A009D720B /* AirshipCore */,
+				0A025E642B325D9A009D720B /* AirshipDebug */,
+				0A025E662B325D9A009D720B /* AirshipFeatureFlags */,
+				0A025E682B325D9A009D720B /* AirshipMessageCenter */,
+				0A025E7E2B3F4BFA009D720B /* TealiumCollect */,
+				0A025E802B3F4BFA009D720B /* TealiumCore */,
+				0A025E822B3F4BFA009D720B /* TealiumTagManagement */,
 			);
 			productName = SUITestingProject;
 			productReference = C05B61C22810A34A00EBFDBE /* SUITestingProject.app */;
@@ -308,7 +358,8 @@
 			mainGroup = C05B61B92810A34900EBFDBE;
 			packageReferences = (
 				C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */,
-				C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */,
+				0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */,
+				0A025E7D2B3F4BFA009D720B /* XCRemoteSwiftPackageReference "tealium-swift" */,
 			);
 			productRefGroup = C05B61C32810A34A00EBFDBE /* Products */;
 			projectDirPath = "";
@@ -324,7 +375,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00B1F672817916A00949186 /* applanga_settings.applanga in Resources */,
 				C05B61CD2810A34E00EBFDBE /* Preview Assets.xcassets in Resources */,
 				C00B1F68281793BE00949186 /* Localizable.strings in Resources */,
 				C05B61CA2810A34E00EBFDBE /* Assets.xcassets in Resources */,
@@ -347,10 +397,14 @@
 				C007090D2852B9650040D083 /* ViewDidLoadModifier.swift in Sources */,
 				C0EEE05B2852C9BB007B0FAF /* CardDetailsView.swift in Sources */,
 				C0DDB2872818C9E500723827 /* TextInputFormatter.swift in Sources */,
+				0AD2F97F2A60C32A00838791 /* ErrorModifier.swift in Sources */,
 				C034AFE0294A3865007DC796 /* SplashScreen.swift in Sources */,
+				0AD2F97D2A60C24C00838791 /* HiddenModifier.swift in Sources */,
+				0A025E6D2B334AE0009D720B /* AppDelegate.swift in Sources */,
 				C00709062852B71A0040D083 /* SkeletonViewModel.swift in Sources */,
 				C05B61C62810A34A00EBFDBE /* SUITestingProjectApp.swift in Sources */,
 				C09B90962853A047008CE295 /* CreditCardView.swift in Sources */,
+				0AD2F9812A60C4BC00838791 /* String+Extensions.swift in Sources */,
 				C034AFE2294A46A7007DC796 /* MainCoordinator.swift in Sources */,
 				C0C417A22812038B00929CC4 /* MMEmailRule.swift in Sources */,
 				C0BC36FC28510C190003D558 /* SkeletonView.swift in Sources */,
@@ -440,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -495,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -510,25 +564,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SUITestingProject/SUITestingProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SUITestingProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KMBDFK3YW;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FH445SE57B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SUITestingProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rodrigorov.SUITestingProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applaudo.dev.volaris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.applaudo.dev.volaris";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,25 +600,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = SUITestingProject/SUITestingProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SUITestingProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KMBDFK3YW;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FH445SE57B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SUITestingProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rodrigorov.SUITestingProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applaudo.dev.volaris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.applaudo.dev.volaris";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,12 +655,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */ = {
+		0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/applanga/sdk-ios";
+			repositoryURL = "https://github.com/urbanairship/ios-library.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				kind = exactVersion;
+				version = 17.7.1;
+			};
+		};
+		0A025E7D2B3F4BFA009D720B /* XCRemoteSwiftPackageReference "tealium-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tealium/tealium-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 2.10.1;
 			};
 		};
 		C05B61D32810A80C00EBFDBE /* XCRemoteSwiftPackageReference "CombineForms" */ = {
@@ -608,10 +682,45 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C00B1F64281790E800949186 /* Applanga */ = {
+		0A025E602B325D9A009D720B /* AirshipAutomation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C00B1F63281790E800949186 /* XCRemoteSwiftPackageReference "sdk-ios" */;
-			productName = Applanga;
+			package = 0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */;
+			productName = AirshipAutomation;
+		};
+		0A025E622B325D9A009D720B /* AirshipCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */;
+			productName = AirshipCore;
+		};
+		0A025E642B325D9A009D720B /* AirshipDebug */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */;
+			productName = AirshipDebug;
+		};
+		0A025E662B325D9A009D720B /* AirshipFeatureFlags */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */;
+			productName = AirshipFeatureFlags;
+		};
+		0A025E682B325D9A009D720B /* AirshipMessageCenter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E5F2B325D9A009D720B /* XCRemoteSwiftPackageReference "ios-library" */;
+			productName = AirshipMessageCenter;
+		};
+		0A025E7E2B3F4BFA009D720B /* TealiumCollect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E7D2B3F4BFA009D720B /* XCRemoteSwiftPackageReference "tealium-swift" */;
+			productName = TealiumCollect;
+		};
+		0A025E802B3F4BFA009D720B /* TealiumCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E7D2B3F4BFA009D720B /* XCRemoteSwiftPackageReference "tealium-swift" */;
+			productName = TealiumCore;
+		};
+		0A025E822B3F4BFA009D720B /* TealiumTagManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A025E7D2B3F4BFA009D720B /* XCRemoteSwiftPackageReference "tealium-swift" */;
+			productName = TealiumTagManagement;
 		};
 		C05B61D42810A80C00EBFDBE /* CombineForms */ = {
 			isa = XCSwiftPackageProductDependency;
